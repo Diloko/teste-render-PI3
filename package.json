@@ -13,7 +13,7 @@
   "main": "back-end/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node back-end/server.js",
+    "start": "npx prisma generate && node back-end/server.js",
     "dev": "nodemon back-end/server.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
@@ -31,7 +31,6 @@
   },
   "homepage": "https://github.com/FatecFranca/DSM-P3-G05-2025-1#readme",
   "devDependencies": {
-    "nodemon": "^3.1.10",
-    "prisma": "^6.9.0"
+    "nodemon": "^3.1.10"
   }
 }
